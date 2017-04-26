@@ -1,5 +1,5 @@
 ---
-title: "Joshua Quan, FY17"
+title: "Chao Chen, FY17"
 output:
   pdf_document: default
   html_notebook: default
@@ -56,7 +56,7 @@ raw <- mutate(raw, semester = ifelse(month %in% 01:05, "Spring",
 raw$semester <- as.factor(raw$semester)
 
 # to look at individuals
-raw1 <- filter(raw, lastname == "Quan")
+raw1 <- filter(raw, lastname == "Chen")
 
 ggplot(raw1, aes(date)) +
   geom_histogram(binwidth = 10, stat = "bin", alpha = .2) +
